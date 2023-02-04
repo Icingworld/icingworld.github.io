@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="#">
+    <title>个人展示</title>
+    <link rel="stylesheet" href="src/css/layui.css">
+    <link id="layuicss-layer" rel="stylesheet" href="src/css/modules/layer/default/layer.css?v3.5.1" media="all">
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            border: 1px solid black;
+            width: 200px;
+            height: 200px;
+        }
+        .img {
+            //width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .show {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+<div class="layui-layout layui-layout-admin">
+
+    <div class="layui-side layui-bg-black">
+        <div style="display: flex;flex-direction: column;align-items: center;">
+            <img class="avatar" src="docs/img/avatar.png" alt="Avatar" style="width: 60%;height: 60%;border-radius: 50%;margin-bottom: 10px;margin-top: 20px;">
+            <p style="font-size: 30px;">蒋梓文</p><br>
+            <a href="mailto:Icingworldd@hotmail.com" style="color:white">Icingworldd@hotmail.com</a><br>
+        </div>
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree" lay-filter="test">
+                <li class="layui-nav-item layui-nav-itemed" id="menu1">
+                    <a class="" href="javascript:;">Python<i class="layui-icon layui-icon-down layui-nav-more"></i></a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="https://www.52pojie.cn/thread-1682091-1-1.html" target="_blank">数字水印</a></dd>
+                        <dd><a href="https://github.com/Icingworld/chinese-net-novel" target="_blank">小说下载器</a></dd>
+                        <dd><a href="https://github.com/Icingworld/LianLianKan" target="_blank">连连看</a></dd>
+                        <dd><a href="https://github.com/Icingworld/MyPassword" target="_blank">MyPassword</a></dd>
+                        <dd><a href="https://github.com/Icingworld/Pic2Character" target="_blank">图像转字符画</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item" id="menu2">
+                    <a href="javascript:;">Web逆向<i class="layui-icon layui-icon-down layui-nav-more"></i></a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="https://github.com/Icingworld/QNDXX" target="_blank">青年大学习逆向</a></dd>
+                        <dd><a href="javascript:;" target="_blank">学校疫情填报逆向</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item" id="menu3">
+                    <a href="javascript:;">C++<i class="layui-icon layui-icon-down layui-nav-more"></i></a>
+                    <dl class="layui-nav-child">
+                        <dd><a href="https://github.com/Icingworld/ChatRoom-release" target="_blank">Qt C/S聊天室</a></dd>
+                    </dl>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="https://github.com/icingworld" target="_blank">By Icingworld.github&nbsp;&nbsp;&nbsp;&#10149</a>
+                </li>
+                <span class="layui-nav-bar"></span>
+            </ul>
+        </div>
+    </div>
+
+    <div class="layui-body">
+
+        <div style="padding: 15px;">
+            <div class="layui-collapse" lay-filter="test" lay-accordion="">
+                <div style="padding: 20px;">
+                    <h1>Python >></h1>
+                </div>
+                <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">数字水印<i class="layui-icon layui-colla-icon"></i></h2>
+                    <div class="layui-colla-content layui-show">
+                        <p>通过二维快速傅立叶变换，将灰度图转化为频率的分布，把水印添加到待加密图像的频谱上，进行傅立叶逆变换，恢复到空间域的图像，从而得到加密图像</p>
+                        <div class="show">
+                            <table class="table">
+                                <tr>
+                                    <td class="td"><img class="img" src="docs/img/原图.jpg" alt="Image 1"></td>
+                                    <td class="td"><img class="img" src="docs/img/原图频谱.jpg" alt="Image 2"></td>
+                                    <td class="td"><img class="img" src="docs/img/水印.jpg" alt="Image 3"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td"><img class="img" src="docs/img/水印编码.jpg" alt="Image 4"></td>
+                                    <td class="td"><img class="img" src="docs/img/水印提取.jpg" alt="Image 5"></td>
+                                    <td class="td"><img class="img" src="docs/img/水印解码.jpg" alt="Image 6"></td>
+                                </tr>
+                            </table>
+                            <h3>(a)原图&nbsp;&nbsp;(b)原图频谱&nbsp;&nbsp;(c)水印</h3>
+                            <h3>(d)水印编码&nbsp;&nbsp;(e)水印提取&nbsp;&nbsp;(f)水印解码</h3>
+                        </div>
+                        <a href="https://www.52pojie.cn/thread-1682091-1-1.html" target="_blank" style="color: blue;">数字水印：https://www.52pojie.cn/thread-1682091-1-1.html&nbsp;&nbsp;&nbsp;&#10149</a>
+                    </div>
+                </div>
+                <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">小说下载器<i class="layui-icon layui-colla-icon"></i></h2>
+                    <div class="layui-colla-content">
+                        <p>使用requests库和BeautifulSoup库的网络小说爬虫，完成了小说搜索，章节过滤，中断重续的功能</p>
+                        <div class="show">
+                            <table class="table">
+                                <tr>
+                                    <td class="td"><img class="img" src="docs/img/小说下载.png" alt="Image 1"></td>
+                                </tr>
+                            </table>
+                            <h3>(a) 小说下载</h3>
+                        </div>
+                        <a href="https://github.com/Icingworld/chinese-net-novel" target="_blank" style="color: blue">小说下载器：https://github.com/Icingworld/chinese-net-novel&nbsp;&nbsp;&nbsp;&#10149</a>
+                    </div>
+                </div>
+                <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">连连看<i class="layui-icon layui-colla-icon"></i></h2>
+                    <div class="layui-colla-content">
+                        <p>使用pygame库开发的连连看游戏</p>
+                        <div class="show">
+                            <table class="table">
+                                <tr>
+                                    <td class="td"><img class="img" src="docs/img/连连看.png" alt="Image 1"></td>
+                                </tr>
+                            </table>
+                            <h3>(a) 连连看游戏界面</h3>
+                        </div>
+                        <a href="https://github.com/Icingworld/LianLianKan" target="_blank" style="color: blue">连连看：https://github.com/Icingworld/LianLianKan&nbsp;&nbsp;&nbsp;&#10149</a>
+                    </div>
+                </div>
+                <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">MyPassword<i class="layui-icon layui-colla-icon"></i></h2>
+                    <div class="layui-colla-content">
+                        <p>基于Python的个人密码管理工具，采用json格式储存密码，AES-128 CBC模式进行加密，具有储存、搜索、修改历史等功能</p>
+                        <div class="show">
+                            <table class="table">
+                                <tr>
+                                    <td class="td"><img class="img" src="docs/img/打开文件.png" alt="Image 1"></td>
+                                    <td class="td"><img class="img" src="docs/img/操作.png" alt="Image 1"></td>
+                                </tr>
+                            </table>
+                            <h3>(a)打开文件&nbsp;&nbsp;(b)操作密码</h3>
+                        </div>
+                        <a href="https://github.com/Icingworld/MyPassword" target="_blank" style="color: blue">MyPassword：https://github.com/Icingworld/MyPassword&nbsp;&nbsp;&nbsp;&#10149</a>
+                    </div>
+                </div>
+                <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">图像转字符画<i class="layui-icon layui-colla-icon"></i></h2>
+                    <div class="layui-colla-content">
+                        <p>使用opencv-python库和pygame库完成的图像转字符画程序，通过设计滑动窗口和深度权重，将图像分割处理，将计算权重后的字符与窗口进行匹配，最终得到字符画。</p>
+                        <div class="show">
+                            <table class="table">
+                                <tr>
+                                    <td class="td"><img class="img" src="docs/img/权重.png" alt="Image 1"></td>
+                                    <td class="td"><img class="img" src="docs/img/字符画原图.jpg" alt="Image 2"></td>
+                                    <td class="td"><img class="img" src="docs/img/字符画.jpg" alt="Image 3"></td>
+                                </tr>
+                            </table>
+                            <h3>(a)权重&nbsp;&nbsp;(b)字符画原图&nbsp;&nbsp;(c)字符画</h3>
+                        </div>
+                        <a href="https://github.com/Icingworld/Pic2Character" target="_blank" style="color: blue;">图像转字符画：https://github.com/Icingworld/Pic2Character&nbsp;&nbsp;&nbsp;&#10149</a>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="layui-collapse" lay-filter="test" lay-accordion="">
+                <div style="padding: 20px;">
+                    <h1>Web逆向 >></h1>
+                </div>
+                <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">青年大学习逆向<i class="layui-icon layui-colla-icon"></i></h2>
+                    <div class="layui-colla-content">
+                        <p>分析了江苏青年大学习流程，逆向破解关键字段，并构造脚本模拟了青年大学习的全部流程，达到完成学习打卡、生成截图的功能</p>
+                        <div class="show">
+                            <table class="table">
+                                <tr>
+                                    <td class="td"><img class="img" src="docs/img/抓包.png" alt="Image 1"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td"><img class="img" src="docs/img/JS逆向.png" alt="Image 1"></td>
+                                </tr>
+                            </table>
+                            <h3>(a)抓包&nbsp;&nbsp;(b)JS逆向</h3>
+                        </div>
+                        <a href="https://github.com/Icingworld/QNDXX" target="_blank" style="color: blue">青年大学习逆向：https://github.com/Icingworld/QNDXX&nbsp;&nbsp;&nbsp;&#10149</a>
+                    </div>
+                </div>
+                <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">学校疫情填报逆向<i class="layui-icon layui-colla-icon"></i></h2>
+                    <div class="layui-colla-content">
+                        <p>抓包分析疫情填报流程，获取关键数据包并分析，使用opencv-python库和pytesseract库识别验证码，构造脚本完成批量定时打卡功能</p>
+                        <div class="show">
+                            <table class="table">
+                                <tr>
+                                    <td class="td"><img class="img" src="docs/img/抓包分析.png" alt="Image 1"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td"><img class="img" src="docs/img/参数分析.png" alt="Image 1"></td>
+                                </tr>
+                            </table>
+                            <h3>(a)抓包分析&nbsp;&nbsp;(b)参数分析</h3>
+                        </div>
+                        <a href="https://www.52pojie.cn/thread-1400181-1-1.html" target="_blank" style="color: blue">学校疫情填报逆向：https://www.52pojie.cn/thread-1400181-1-1.html&nbsp;&nbsp;&nbsp;&#10149</a>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="layui-collapse" lay-filter="test" lay-accordion="">
+                <div style="padding: 20px;">
+                    <h1>C++ >></h1>
+                </div>
+                <div class="layui-colla-item">
+                    <h2 class="layui-colla-title">Qt C/S聊天室<i class="layui-icon layui-colla-icon"></i></h2>
+                    <div class="layui-colla-content">
+                        <p>基于Qt C++开发了多平台客户端/服务端结构聊天室，完成了注册登录、好友管理、多人聊天、历史记录、日志管理等功能</p>
+                        <div class="show">
+                            <table class="table">
+                                <tr>
+                                    <td class="td"><img class="img" src="docs/img/服务端监控.png" alt="Image 1"></td>
+                                    <td class="td"><img class="img" src="docs/img/日志.png" alt="Image 1"></td>
+                                </tr>
+                                <tr>
+                                    <td class="td"><img class="img" src="docs/img/客户端.png" alt="Image 1"></td>
+                                    <td class="td"><img class="img" src="docs/img/聊天室.png" alt="Image 1"></td>
+                                </tr>
+                            </table>
+                            <h3>(a)服务端监控&nbsp;&nbsp;(b)日志</h3>
+                            <h3>(a)客户端&nbsp;&nbsp;(b)聊天室</h3>
+                        </div>
+                        <a href="https://github.com/Icingworld/ChatRoom-release" target="_blank" style="color: blue">Qt C/S聊天室：https://github.com/Icingworld/ChatRoom-release&nbsp;&nbsp;&nbsp;&#10149</a>
+                    </div>
+                </div>
+            </div>
+
+            <br><br>
+
+        </div>
+    </div>
+
+    <div class="layui-footer" id="footer-text" style="display: flex;justify-content: center;align-items: center;text-align: center;"></div>
+</div>
+<script src="src/layui.js"></script>
+<script>
+    layui.use(['element', 'layer', 'util'], function(){
+        var element = layui.element
+            ,layer = layui.layer
+            ,util = layui.util
+            ,$ = layui.$;
+    });
+    layui.use('carousel', function(){
+        var carousel = layui.carousel;
+
+        //建造实例
+        carousel.render({
+            elem: '#test1'
+            ,index: 2
+            //,full: true
+            ,arrow: 'always'
+            //,interval: 5000
+            //,autoplay: false
+            //,indicator: 'outside'
+            //,trigger: 'hover'
+        });
+
+        //事件
+        carousel.on('change(test1)', function(res){
+            console.log(res)
+        });
+
+        carousel.render({
+            elem: '#test2'
+            ,interval: 1800
+            //,full: true
+            ,anim: 'fade'
+            ,height: '120px'
+        });
+
+        carousel.render({
+            elem: '#test3'
+            //,full: true
+            ,arrow: 'always'
+            //,autoplay: false
+            //,indicator: 'outside'
+            //,trigger: 'hover'
+            ,anim: 'updown'
+            //,full: true
+        });
+
+        carousel.render({
+            elem: '#test4'
+            ,width: '778px'
+            ,height: '440px'
+            ,interval: 5000
+        });
+    });
+    const sentences = [
+        "To be both a speaker of words and a doer of deeds.",
+        "The greatest test of courage on earth is to bear defeat without losing heart.",
+        "Only they who fulfill their duties in everyday matters will fulfill them on great occasions.",
+        "Life would be too smooth if it had no rubs in it.",
+        "The best hearts are always the bravest.",
+        "The reason why a great man is great is that he resolves to be a great man.",
+        "Suffering is the most powerful teacher of life.",
+        "There's only one corner of the universe you can be sure of improving, and that's your own self.",
+        "Sharp tools make good work.",
+        "Life is a horse, and either you ride it or it rides you.",
+        "Life is the art of drawing sufficient conclusions form insufficient premises."
+    ];
+
+    function getRandomSentence() {
+        return sentences[Math.floor(Math.random() * sentences.length)];
+    }
+
+    window.onload = function() {
+        document.getElementById("footer-text").innerHTML = getRandomSentence();
+    };
+
+    document.getElementById("menu1").addEventListener("click", function() {
+        if (document.getElementById("menu1").className === "layui-nav-item layui-nav-itemed") {
+            document.getElementById("menu2").className = "layui-nav-item";
+            document.getElementById("menu3").className = "layui-nav-item";
+        }
+    })
+
+    document.getElementById("menu2").addEventListener("click", function() {
+        if (document.getElementById("menu2").className === "layui-nav-item layui-nav-itemed") {
+            document.getElementById("menu1").className = "layui-nav-item";
+            document.getElementById("menu3").className = "layui-nav-item";
+        }
+    })
+
+    document.getElementById("menu3").addEventListener("click", function() {
+        if (document.getElementById("menu3").className === "layui-nav-item layui-nav-itemed") {
+            document.getElementById("menu2").className = "layui-nav-item";
+            document.getElementById("menu1").className = "layui-nav-item";
+        }
+    })
+</script>
+</body>
+</html>
